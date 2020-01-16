@@ -1,0 +1,26 @@
+{
+    "animals": {
+      
+      "axolotl": {
+        "image": "./images/Axolotl.jpg",
+        "imageCredit": "By LoKiLeCh - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3513307",  
+        "blurb": "The axolotl, also known as the Mexican walking fish, is a neotenic salamander related to the tiger salamander. Although the axolotl is colloquially known as a walking fish, it is not a fish, but an amphibian. The species was originally found in several lakes, such as Lake Xochimilco underlying Mexico City. Axolotls are unusual among amphibians in that they reach adulthood without undergoing metamorphosis. Instead of developing lungs and taking to the land, adults remain aquatic and gilled. Axolotls should not be confused with waterdogs, the larval stage of the closely related tiger salamanders, which are widespread in much of North America and occasionally become neotenic. Neither should they be confused with mudpuppies, fully aquatic salamanders that are not closely related to the axolotl but bear a superficial resemblance. As of 2010, wild axolotls were near extinction due to urbanization in Mexico City and consequent water pollution, as well as the introduction of invasive species such as tilapia and perch. They are currently listed by CITES as an endangered species and by IUCN as critically endangered in the wild, with a decreasing population. Axolotls are used extensively in scientific research due to their ability to regenerate limbs. Axolotls were also sold as food in Mexican markets and were a staple in the Aztec diet. Surveys in 1998, 2003, and 2008 found 6,000, 1,000, and 100 axolotls per square kilometer in its Lake Xochimilco habitat, respectively. A four-month-long search in 2013, however, turned up no surviving individuals in the wild. Just a month later, two wild ones were spotted in a network of canals leading from Xochimilco.The city is currently working on conserving axolotls by building axolotl shelters and conserving remaining and potential habitats for the salamanders. Given all of this amazing information, coppied from wikipedia, it shuld be painfull obvious why the axolotl is your spirit animal"
+        },
+        "gunnison-sage-grouse" : { 
+          "image": "https://nc.iucnredlist.org/redlist/species-of-the-day/centrocercus-minimus/images/full/centrocercus-minimus.jpg" , 
+          "imageCredit": "Creator:Noppadol Paothong, Copyright:©Noppadol Paothong www.nopnatureimages.com", 
+          "blurb": "Your passionate, bold and eaily agitated. Your goal in life is to find prudent courtship, and always be just a touch too much."
+      },
+      "fennec fox" : {
+        "image": "https://tinyurl.com/wfemvbh",
+        "imageCredit": "Floridapfe",
+        "blurb": "The fennec fox, or fennec (Vulpes zerda) or sand fox, is a small crepuscular fox found in the Sahara Desert of North Africa, the Sinai Peninsula, South East Egypt (Arava desert)[2] and the Arabian desert. Its most distinctive feature is its unusually large ears, which also serve to dissipate heat. Its name comes from the Berber-Arabic word (fanak), which means fox"
+      },
+      "blobfish" : {
+          "image": "https://i.pinimg.com/originals/3a/31/df/3a31df50d03e349d51ecd5c3eae6eece.jpg",
+          "imageCredit": "it's probably free right?",
+          "blurb": "You got the Blobfish. The BLOBFISH.If you got this fish, it's highly likely that you look like it in real life, and there is no helping. Unfortunately, there isn't much anyone can do for you, except sympathize while avoiding eye contact where possible. Soz. Anyway, thanks for finishing the quiz "
+      }
+    }
+}     
+ 
