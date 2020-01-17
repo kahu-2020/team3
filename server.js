@@ -3,6 +3,7 @@ const hbs = require('express-handlebars')
 
 const server = express()
 
+const quizData = require('./quiz.json')
 
 
 // Middleware
@@ -21,21 +22,29 @@ let userName = '';
 let blobFishScore = 0;
 let grouseScore = 0;
 let fennicFox = 0;
-let otherAnimal = 0;
+let axolotl = 0;
 
 
 server.get('/', (req, res) => {
   res.render("home.hbs")
 })
 
-server.get('/1', (req, res) => {
-  res.render("quiz.hbs")
-})
-
 server.post('/name', (req, res) => {
   username = req.body.name 
-  res.redirect('/1')
+  res.redirect('/quiz/1')
 })
+
+server.get('/quiz/:id', (req, res) => {
+  
+  let currentQuestion = quizData.questions.find((question) => {
+    return question.id == req.params.id
+  }) 
+
+  console.log(currentQuestion)
+  res.render("quiz.hbs", currentQuestion)
+})
+
+
 
 server.post('/quiz/answer/1', (req, res) => {
   blobFishScore++
@@ -56,8 +65,8 @@ server.post('/quiz/answer/3', (req, res) => {
 })
 
 server.post('/quiz/answer/4', (req, res) => {
-  otherAnimal++
-  console.log(otherAnimal) 
+  axolotl++
+  console.log(axolotl) 
   res.redirect('/')
 })
 
