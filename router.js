@@ -23,10 +23,11 @@ router.get('/blurb', (req, res) => {
     //doublecheck if we need / before filename
     fs.readFile('/animals', 'utf8', (err, data) => {
         animals = JSON.parse(data).animals
-        
+        if(blobFishScore > grouseScore && blobFishScore > fennicFox && blobFishScore > axolotlScore) {
+            blurb = animals['blobfish'].blurb
+            }
+        res.render('/burb', blurb)
     })  
-    
-    res.render('/burb', blurb)
 })
 
 

@@ -21,7 +21,7 @@ let userName = '';
 let blobFishScore = 0;
 let grouseScore = 0;
 let fennicFox = 0;
-let otherAnimal = 0;
+let axolotl = 0;
 
 
 server.get('/', (req, res) => {
