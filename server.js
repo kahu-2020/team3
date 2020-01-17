@@ -23,6 +23,7 @@ let blobFishScore = 0;
 let grouseScore = 0;
 let fennicFox = 0;
 let axolotl = 0;
+let questionCounter = 1
 
 
 server.get('/', (req, res) => {
@@ -40,33 +41,43 @@ server.get('/quiz/:id', (req, res) => {
     return question.id == req.params.id
   }) 
 
-  console.log(currentQuestion)
-  res.render("quiz.hbs", currentQuestion)
+  
+  if (questionCounter < 8) {
+    questionCounter++
+    res.render("quiz", currentQuestion)
+  } else {
+    res.render("blurb", router.blurb)
+  }
+  
+  
+  
+  
+  
 })
 
 
 
 server.post('/quiz/answer/1', (req, res) => {
   blobFishScore++
-  console.log(blobFishScore) 
-  res.redirect('/')
+  console.log(req) 
+  res.redirect('/quiz/' + questionCounter)
 })
 
 server.post('/quiz/answer/2', (req, res) => {
   grouseScore++
-  console.log(grouseScore) 
+  //console.log(grouseScore) 
   res.redirect('/')
 })
 
 server.post('/quiz/answer/3', (req, res) => {
   fennicFox++
-  console.log(fennicFox) 
+  //console.log(fennicFox) 
   res.redirect('/')
 })
 
 server.post('/quiz/answer/4', (req, res) => {
   axolotl++
-  console.log(axolotl) 
+  //console.log(axolotl) 
   res.redirect('/')
 })
 
