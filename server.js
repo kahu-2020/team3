@@ -4,6 +4,7 @@ const router = require('./router')
 const server = express()
 
 const quizData = require('./quiz.json')
+const animalData = require('./animals.json')
 
 
 // Middleware
@@ -55,6 +56,16 @@ server.get('/quiz/:id', (req, res) => {
   
 })
 
+
+server.get('/blurb/:type', (req, res) => {
+  
+  let currentAnimal = animalData.animals.find((animal) => {
+    return animal.type == req.params.type
+  }) 
+
+  console.log(currentAnimal)
+  res.render("blurb.hbs", currentAnimal)
+})
 
 
 server.post('/quiz/answer/1', (req, res) => {
