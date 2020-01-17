@@ -1,6 +1,6 @@
 const express = require('express')
 const hbs = require('express-handlebars')
-
+const router = require('./router')
 const server = express()
 
 // Middleware
