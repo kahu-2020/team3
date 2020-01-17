@@ -23,9 +23,16 @@ router.get('/blurb', (req, res) => {
     //doublecheck if we need / before filename
     fs.readFile('/animals', 'utf8', (err, data) => {
         animals = JSON.parse(data).animals
-        if(blobFishScore > grouseScore && blobFishScore > fennicFox && blobFishScore > axolotlScore) {
+        if(blobFishScore > grouseScore && blobFishScore > fennicFox && blobFishScore > axolotl) {
             blurb = animals['blobfish'].blurb
-            }
+            } else if(grouseScore > blobfishScore && grouseScore > fennicFox && grouseScore > axolotl) {
+                    blurb = animals['grouseScore'].blurb
+                } else if (fennicFox > blobfishScore && fennicFox > grouseScore && fennicFox > axolotl) {
+                    blurb = animals['fennicFox'].blurb
+                } else {
+                    blurb = animals['axolotl'].blurb
+                }
+        console.log(blurb) 
         res.render('/burb', blurb)
     })  
 })
