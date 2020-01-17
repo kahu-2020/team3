@@ -14,20 +14,20 @@
       "id": "2",
       "q": "What was your last form of bathing?",
       "qAnswers": {
-          "a1": "long self deprecating shower",
+          "a1": "Long self deprecating shower",
           "a2": "20 second sink wash",
-          "a3": "pampered bath",
-          "a4": "walk in the rain"
+          "a3": "Pampered bath",
+          "a4": "Walk in the rain"
     }
   },
     {
       "id": "3",
       "q": "Which green vegetable do you most relate to?",
       "qAnswers": {
-          "a1": "cumcumber- fresh, fly, underrated",
-          "a2": "spring onion- flexible, layered, tasty",
-          "a3": "kale- easy going, introverted, multipurpose",
-          "a4": "cabbage- tough, good with boundries, homebody"
+          "a1": "Cumcumber : fresh, fly, underrated",
+          "a2": "Spring onion : flexible, layered, tasty",
+          "a3": "Kale : easy going, introverted, multipurpose",
+          "a4": "Cabbage : tough, good with boundries, homebody"
       }
     },
     {
@@ -36,7 +36,7 @@
       "qAnswers": { 
           "a1": "No",
           "a2": "Cheese",
-          "a3": "The Infintie Void",
+          "a3": "The Infinite Void",
           "a4": "Milk"
       }
     },
